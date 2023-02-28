@@ -1,0 +1,35 @@
+Botswana police use Israeli Cellebrite tech to search another journalists phone
+
+Tsaone Basimanebotlhe was not expecting security agents to appear at her home in a village outside Gaborone, Botswanas capital, in July 2019, she told CPJ in a recent interview. But they didnt come to arrest or charge her, she recalled – they came for her devices, hunting for the source for an article published by her employer, Mmegi newspaper.
+
+Basimanebotlhe, a politics reporter, said she surrendered her phone and password to the agents after they presented a warrant and could not find her computer. A senior officer then used technology sold by the Israel-based company Cellebrite to extract and analyze thousands of her messages, call logs, and emails, and her web browsing history, according to an affidavit from the police forensics laboratory. The affidavit, which CPJ reviewed, was submitted during a related court case.
+
+“Theyre looking for people that are divulging information to the media,” Basimanebotlhe told CPJ.
+
+Botswana police also deployed Cellebrite technology to search the phone of Oratile Dikologang, a local editor charged in 2020 over Facebook posts who alleged that police violently interrogated him about his sources, as CPJ recently reported.
+
+The use of powerful tools provided by private companies to scour seized devices raises significant concerns over privacy and press freedom. The experiences of Basimanebotlhe and Dikologang demonstrate that police in Botswana use digital forensics equipment to sweep up vast quantities of journalists communications from seized devices, regardless of whether they are charged with a crime. The extent of these searches was only revealed when police documents were submitted in court months after the fact, and its not clear what happened to the data.
+
+Botswanas security forces routinely arrest journalists and take possession of their devices, CPJ has found. In March, Botswana police seized computers and phones from arrested reporters and media workers with the Moeladilotlhoko News Boiler, a private, Facebook-based outlet, CPJ recently documented; officers demanded their passcodes, answered calls and read messages on the devices, and kept two of the phones as evidence even after the charges connected to that arrest were withdrawn in April. David Baaitse, a reporter for Botswanas Weekend Post newspaper, separately told CPJ that intelligence agents took phones belonging to him and his colleague to be analyzed for six months following their arrest last year.
+
+“If you take my phone and go and analyze it, you have my folders and everything, all my contacts,” Baaitse told CPJ in a recent interview. He added that such actions by security forces hinder journalists ability to gather information, saying, “Sources, they no longer trust us. They no longer want to deal directly with us.”
+
+In Basimanebotlhes case, Mmegi reported that when her phone was first seized in July 2019, police were seeking evidence for their investigation of a former intelligence chief, Isaac Kgosi. The police claimed that Kgosi had taken photographs of undercover security agents, exposing their identities, and that those photographs were published by Mmegi in a February 2019 article, Basimanebotlhe said. The article, which was attributed to a staff reporter, had been written by one of Basimanebotlhes colleagues, Mmegi later clarified.
+
+“They alleged that I had photos of DIS people,” Basimanebotlhe told CPJ, referring to an acronym for Botswanas Directorate on Intelligence and Security Services. “They believed Im the one who wrote the story,” she said.
+
+The affidavit detailing the forensic search of Basimanebotlhes devices was submitted during Kgosis prosecution over the photographs, his lawyer, Unoda Mack, told CPJ by phone. It states that police used Cellebrites Universal Forensic Extraction Device (UFED) and Physical Analyzer technologies to retrieve and evaluate the information from her phone, but found no evidence relevant to their investigation, according to CPJs review. Mack told CPJ that Kgosi pleaded not guilty, and local media reported that a magistrate ultimately dismissed for lack of evidence the charge that he had exposed agents identities.
+
+“They said they didnt find anything in my phone,” Basimaonebotlhe told CPJ. “[But] they went through my SMS, my WhatsApp [messages].”
+
+CPJ contacted Botswana police spokesperson Dipheko Motube over the phone about Basimaonebotlhes caseand he requested that questions be sent via messaging app. He did not respond to those questions, and previously declined to comment on the case involving Dikologang because it was still before the court. In response to questions about the Moeladilotlhoko News Boiler arrests, Motube told CPJ that investigations “may necessitate” detentions and confiscation of “any implement which may have been used in the commission of the offence” with “due regard to the rights of the individual arrested.”
+
+Reached by phone, Botswana government spokesperson Batlhalefi Leagajang requested questions about security forces alleged use of digital forensics technology be sent by email. CPJ sent those questions, but received no response.
+
+Cellebrite, which is owned by the Japan-based Sun Corporation, says that its UFED toolkit can extract data from mobile phones, SIM cards, and other devices even after the information was deleted, and its Physical Analyzer helps examine digital data. In April, Nasdaq reported that Cellebrite would be listed on the stock exchange via a merger with TWC Tech Holdings II Corp., a U.S.-based special purpose acquisition company (SPAC) designed to take companies public.
+
+In response to CPJs questions about the use of its technology in Botswana and human rights due diligence processes, Cellebrite provided a statement emailed via the Fusion Public Relations company that said it could not “speak to any specifics” about its customers. Cellebrite “requires that agencies and governments that use our technology uphold the standards of international human rights law,” the statement said. “Our compliance solutions enable an audit trail and can discern who, when and how data was accessed, which leads to accountability in the agencies and organizations that use our tools,” the company added. Cellebrite did not directly address CPJs question about if the company considered the use of its tools to search journalists devices to be acceptable.
+
+Sun Corporation and TWC Tech Holdings II Corp. did not respond to questions CPJ emailed about this article.
+
+“[Police] want access to the data so they can know the sources of these journalists,” Dick Bayford, a lawyer in Gaborone whose firm represented Basimanebotlhe and Baaitse, told CPJ in a recent interview. “It [has] a chilling effect on freedom of the press.”

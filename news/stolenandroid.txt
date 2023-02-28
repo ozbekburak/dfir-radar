@@ -1,0 +1,24 @@
+A stolen Android phone PIN could be used to change your Google account password
+
+The Internet has recently been awash with frightening stories of how thieves could gain access to all of the deepest, darkest secrets that you keep on your iPhone, just by knowing your PIN number.
+
+Simply by knowing your login PIN (and getting hold of your iPhone), it's possible for anyone to change your Apple ID, locking you out of all other Apple devices, and even get unwanted access to your bank accounts and social networks. 
+
+Worryingly, experts have now found that the same is true of Android devices, which are equally at risk of such data theft.
+
+Android PIN theft
+On an Android device, users can navigate to Google > Manage your Google Account > Security > Password in the system Settings app. From there, they can click ‘Forgot password’ and use an option to use the phone’s screen lock code to change their Google account password.
+
+Google’s software developers have made this possible because your phone is seen as your own, and when successfully logged in, it assumes you’re the user.
+
+While useful on those occasions that you do forget your password, it doesn’t take into account thieves who know - or are able to figure out - your PIN.
+
+9To5Google(opens in new tab) explained that this has been most commonly witnessed among iPhone users, presumably because they hold a higher resale value compared to initial cost, helping thieves to pocket some extra cash.
+
+Regardless, the problem is no less severe among Android users who, like iPhone users, can have all of their otherwise unprotected data accessed and leaked. 
+
+Even protected data is at risk, assuming your passwords are stored in a password manager that can be accessed during an attack.
+
+While it’s possible to prevent password-changing capabilities via PIN with Advanced Protection enabled, for many users, this is unrealistic as it requires a pair of physical security keys and some technical knowledge.
+
+Customers worldwide are urging Google and Apple to consider this option more carefully but in the meantime, they can protect their data by limiting the types of apps that can be accessed via the phone’s login method, and carefully considering how they manage their passwords.

@@ -1,0 +1,20 @@
+The Amsterdam cybercrime police team has arrested three men for ransomware activity that generated €2.5 million from extorting small and large organizations in multiple countries.
+
+The suspects, all young men aged between 18 and 21, are charged with stealing sensitive data from victim networks and demanding a ransom. It is believed that they attacked thousands of companies.
+
+Victims include online shops, software firms, social media companies, and institutions connected to critical infrastructure and services.
+
+The threat actors demanded between €100,000 and €700,000, depending on the size of the organization they hacked. The extortion involved threats of leaking the data or destroying the company's digital infrastructure.
+
+It is unclear if the hackers also encrypted files during the attacks or just stole data and threatened to leak it unless the victim paid a ransom.
+
+The Dutch police say that even when victims paid the ransom, the hackers still sold the stolen data online for extra profit.
+
+"The cybercrime team started the investigation in March 2021 in response to a declaration of data theft and threat to a large Dutch company," reads the police announcement.
+
+"As the research progressed, it has become clear that probably thousands of small and large companies and institutions, both nationally and internationally, have fallen victim to computer breach from the trio in recent years (hacking), followed by theft and selling of their data" - Dutch Police
+It is estimated that the hackers stole personal data belonging to tens of millions of individuals, including names, email addresses, telephone numbers, bank account numbers, credit card details, account passwords, license plates, and passport details.
+
+This information can be used in phishing and social engineering attacks, and various fraudulent activities.
+
+Amsterdam's cybercrime unit has noticed a worrying trend among data brokers who now process stolen data to refine the records and make the databases easily searchable. This gives them better sales prospects and maximizes their profits from successful network intrusions.

@@ -1,0 +1,40 @@
+Computer Crime: Britain Plans to Overhaul 32-Year-Old Law
+
+The British government is proposing to give itself more law enforcement powers against hackers in a public consultation critics say is marred by a lack of concrete proposals to shield security researchers acting in good faith.
+
+The conservative government of Prime Minister Rishi Sunak unveiled this month proposed updates to the U.K.'s principal anti-hacking law, the Computer Misuse Act of 1990. It proposes giving law enforcement the ability to seize IP addresses tied to cybercrime, to compel data preservation, and to further criminalize the possession of stolen data. Home Office officials have promised an updated law will include protection for white hat hackers but have yet to issue any concrete proposals for doing so.
+
+The 1990 law criminalizes unauthorized access to computer systems and data, as well as damaging or destroying either, and is intended to protect the security and integrity of systems and information.
+
+There's widespread agreement that the 32-year-old is overdue for an update. "There have been several amendments to the act, most recently in 2015, to ensure that U.K. legislation met the requirements of the Council of Europe Convention on Cybercrime - Budapest Convention - and other relevant EU directives," according to Britain's Society for Computers and Law. "However, these changes were relatively limited."
+
+In a Feb. 7 request for comments, the government says it is especially interested in getting feedback on its proposals from law enforcement agencies, domain name registrars and registries, and hosting providers. Conservative member of Parliament Tom Tugendhat - who serves as the Minister of State for Security, which is part of the Home Office - says the government also wants feedback on three specific proposed updates to the law:
+
+Seizing IP addresses: Should law enforcement have the power to seize domains and IP addresses when they are being used by criminals, for example, for hacking or fraud? "We recognize that a significant amount is done under voluntary arrangements to tackle the misuse of domain names, and we would not want to see these arrangements undermined, but I believe that we need to ensure that where such arrangements are unavailable, law enforcement agencies have the power to take action," Tugendhat says.
+Data preservation: Should law enforcement be able to require that computer data be preserved in case it's found to be required during the course of an investigation? The proposal wouldn't allow police to seize such data outright - only to require its preservation.
+Data crimes: Should possessing or using stolen data, including personal identifiable information, that has been obtained from someone else - who themselves violated the Computer Misuse Act - also be criminalized?
+"A notable feature of the proposed changes is around trying to break the link between criminal domains and victim domains," says Julia Varley, an associate at London-based law firm Pinsent Masons who specializes in cyber risk. Beyond seizing IP addresses suspected of being used by criminals, the proposed changes would also give police "the power to require the U.K. registry not to register domain names that are predicted to be used for criminal purposes."
+
+Not All Hackers Are Criminal
+The Home Office will be gathering stakeholders to discuss suggestions for dealing with a number of "complex issues" via modifications to the CMA.
+
+These include "proposals on the levels of sentencing, defenses to the CMA offenses, improvements to the ability to report vulnerabilities, and whether the U.K. has sufficient legislation to cover extraterritorial threats," Tugendhat says.
+
+Referenced in that statement is the government's promise to review legal protections for cybersecurity researchers who act in good faith. Introducing such safeguards has been widely demanded by service providers and members of the cybersecurity community, including Ciaran Martin, the former head of Britain's National Cyber Security Center. "The government isn't doing anything wrong. It's just that legislation from 1990 on the misuse of computers is obviously out of date," Martin tweeted last September.
+
+For now, "continued ambiguity" around protections for cybersecurity professionals complicates the business of defending British organizations from online attacks, says Kat Sommer, group head of strategy and public affairs at Manchester-based cybersecurity consultancy NCC Group.
+
+Sommer asks why it's taking the government so long to update CMA. "After 21 months of consultation, we would have hoped for further progress to bring the 32-year-old Computer Misuse Act into the 21st century than what has been announced," she says.
+
+Transnational Crime
+Whatever changes get made to the CMA, every law has its limits. In this case, that includes the challenge of tackling cybercrime, when so many perpetrators not only reside outside Britain, but in or around Russia, which as a rule doesn't extradites its citizens.
+
+"The U.K. government will have to rely on cooperation with governments and law enforcement agencies in other jurisdictions, and also those jurisdictions having the ability and legislation to prosecute extraterritorial criminality," says Stuart Davey, a partner at Pinsent Masons. "It's a global problem that calls for global response, and this is recognized to some degree in the consultation."
+
+Potentially compounding the problem is Britain's relationship status with the European Union. Despite suggestions to the contrary by some British officials who advocated for Brexit, once Britain left the EU, it was no longer allowed to be a member of the EU's law enforcement intelligence agency, Europol. The U.K. also lost access to the Schengen Information System, which facilitates border and security information sharing between EU member states.
+
+The rapid flow of information has not been fully ruptured. The U.K. signed a Trade and Cooperation Agreement with the EU that gives it access to some EU databases, according to a House of Lords report. "For example, DNA and fingerprint data can continue to be exchanged through the Prüm system subject to certain restrictions and preconditions," it says.
+
+In addition, under the TCA, U.K. liaison officers are allowed "to be present in Europol's headquarters to facilitate cross-border cooperation." While the U.K. lost access to the European Arrest Warrant, under the TCA it has "extradition arrangements akin to the EU's Surrender Agreement with Norway and Iceland.'"
+
+Under the European Arrest Warrant, a suspect arrested inside the EU must be transferred to the EU member state that filed the warrant within 60 days. Under the TCA, such transfers can take up to 90 days.

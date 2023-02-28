@@ -1,0 +1,51 @@
+Over the weekend, a ransomware assault disrupted Porsche South Africa’s Johannesburg headquarters, bringing down some of the company’s systems and at least some backups.
+
+According to MyBroadband, the attackers encrypted the company’s files and locked it out of corporate systems using a relatively new ransomware strain dubbed Faust.
+
+According to security analysts, Faust is a descendant of the Phobos ransomware family.
+
+This malware family is usually distributed through hijacked Remote Desktop Protocol connections.
+
+But, according to PCRisk.com, the variation is propagated via downloads from malicious websites or torrents, online scams, attachments in spam emails, activation tools for unlicensed software, and bogus upgrades.
+
+It encrypts potentially crucial data, rendering it useless until decrypted with tools for which the victim must pay the attackers a predetermined amount in bitcoin.
+
+Apart from encrypting the data, Faust alters file names by appending a unique ID for the victim, the attacker’s email address, and a.faust extension.
+
+It then displays the ransom demand in a pop-up window, which is saved in a text file.
+
+The ransom letter informs the victim that their data have been encrypted and that they must pay a specified sum in Bitcoin in order to obtain the tools required to decode their files.
+
+The victim is further advised that changing the encrypted files or utilising third-party decryption tools may result in irreversible data loss.
+
+According to PCRisk.com, the sum payable would be determined by how quickly a victim notified the malicious actors.
+
+Victims can also decrypt five files with precise parameters for free, demonstrating that the decryption tools perform as advertised.
+
+It is now impossible to decode the data without the attackers’ assistance. For earlier ransomware outbreaks, free decryption tools are frequently accessible. No More Ransom keeps a list of decryption tools on hand.
+
+Although many newer types of ransomware lack decryptors, collaborating with attackers does not guarantee that victims will be provided with the required decryption tools.
+
+Companies with robust contingency plans in place should be able to clean up the infected workstations, patch the security weakness utilised by the attackers, and restore systems from backups.
+
+Porsche South Africa has declined to comment
+
+MyBroadband reached out to Porsche South Africa for further information regarding the event, but the company declined to comment, neither confirming nor denying the attack.
+
+When we challenged the firm on its responsibilities to disclose any events in which client data could have been exposed, a spokeswoman replied that “all protocols would be observed”.
+
+It was unclear what the attackers wanted from the firm or whether it had paid a ransom to reclaim access to its system.
+
+It was also unclear whether the attackers had compromised or stolen key operational or customer data to be used later.
+
+Automobile dealerships frequently deal with personally identifiable information since it is frequently necessary for car finance and servicing or maintenance contracts.
+
+Nevertheless, Paraflare’s Digital Forensics and Incident Response team discovered that the operators of the Phobos ransomware were not renowned for exfiltrating data to be utilised in double-extortion style assaults.
+
+In such “double-extortion” scenarios, attackers threaten to disclose the stolen material on the dark web as well as clearweb sites such as Telegram. This data can then be used by other hostile actors.
+
+Paraflare also discovered that Phobos-affiliated criminals had more autonomy, demanded lesser ransom amounts, and were less professional than operators utilising other ransomware families.
+
+Porsche Japan was the victim of a cyberattack in February 2018, which resulted in customer data being disclosed to hackers.
+
+Details such as client names, home locations, contact numbers, yearly wages, and owned automobiles were stolen in that event.

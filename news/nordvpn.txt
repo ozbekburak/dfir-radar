@@ -1,0 +1,33 @@
+NordVPN apps and servers confirmed as secure by independent auditors
+
+One of the best VPN services around, NordVPN, has called in an independent cybersecurity firm to test the security of its software.
+
+Experts at Cure53 examined both Nord's server infrastructure and the security of all its apps, garnering a "robust impression" overall.
+
+These results confirmed, once again, the provider's eagerness to ensure transparent operations, advanced online security, and reliable users' privacy. 
+
+Not long ago, in fact, Nord also passed its third no-logs audit with flying colors. 
+
+Transparency and security at NordVPN's core 
+"Dedication to product development and a happy customer always pay off. We continuously improve the overall performance of our service and develop advanced VPN features, giving our users increased online security," said Marijus Briedis, CTO at NordVPN. 
+
+Strong online security is indeed a pivotal feature for a VPN service. Something that the biggest name in the market decided to put under scrutiny.
+
+The third-party auditors conducted a series of white-box penetration tests and source code audits to evaluate NordVPN's servers, infrastructure as well as its desktop apps (Windows, Linux, macOS) and both Android VPN and iOS VPN apps.
+
+The tests were performed between September/October and July/August 2022, respectively.
+
+The audit on Nord's servers and infrastructure found a total of eleven issues, among which only one was categorized as a security vulnerability. 
+
+Experts were pleased to confirm NordVPN as secure, garnering "a relatively strong impression" overall.
+
+The test on Nord's VPN applications gained a mixed impression, though, with a total of 22 among some security vulnerabilities and general weakness. 
+
+Despite finding a series of areas of improvement, Cure53 confirmed that "the entire client software complex has already made strong progress from a security perspective."    
+
+Even better, many of these issues don't actually exist anymore or are planned to be fixed soon with upcoming updates. 
+
+"Our developers fixed all detected vulnerabilities, and they were approved by Cure53, ensuring that NordVPN implemented all mitigations correctly,” said Briedis. 
+
+The full reports are available to review via the user control panel. Alternatively, follow the app security assessment report(opens in new tab) and infrastructure security assessment report(opens in new tab) links.   
+

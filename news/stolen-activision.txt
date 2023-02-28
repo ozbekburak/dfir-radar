@@ -1,0 +1,21 @@
+Data stolen from top gaming publisher Activision by hackers has now appeared for download on a popular dark web forum.
+
+The breach, which occurred in December 2022, was confirmed by the videogame publisher several days ago. Now, it looks as if the worst case scenario has become reality.
+
+The data, which the hackers claim was stolen from Activision's instance of the content delivery network (CDN) Azure, apparently includes nearly 20,000 records of employee details, including full names, email addresses, phone numbers and office addresses.
+
+Contradicting reports
+
+Rather than being sold for a price, the data here is being offered for free to all users of the forum, in the form of a text file. Threat finders FalconFeedsio were the first to report the post on Twitter(opens in new tab).
+
+The initial hack was achieved via an SMS phishing campaign - AKA smishing - to which an HR employee at the firm fell victim, giving away company credentials that allowed for access to its endpoints.
+
+In confirming the breach, an Activision spokesperson told BleepingComputer(opens in new tab) that "no sensitive employee data" was accessed, although cybersecurity researchers vx-underground, who uncovered the incident, found this to be untrue, as they were privy to the stolen data and messages posted by the hackers on Activision’s Slack workspaces that showed otherwise.
+
+Now the hacker's forum post appears to confirm this beyond doubt. Activision is yet to respond in light of their actions.
+
+Other data stolen in the hack included that related to upcoming games, although Activision said this was not sensitive and at best only related to marketing materials already in the public domain.
+
+Activision also assured that player and customer data remains safe and was not included in the hack. Since no mention of this was made in the hacker's post, it seems as if this is indeed true. 
+
+The free availability of employee data could mean the future bombardment of employees with other malicious campaigns, such as further phishing attacks and identity theft.
