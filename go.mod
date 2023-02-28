@@ -2,9 +2,4 @@ module github.com/ozbekburak/dfir-hunter
 
 go 1.19
 
-require github.com/PuerkitoBio/goquery v1.8.1
-
-require (
-	github.com/andybalholm/cascadia v1.3.1 // indirect
-	golang.org/x/net v0.7.0 // indirect
-)
+require github.com/rakyll/openai-go v0.0.0-20230227181758-1df94a18077d
