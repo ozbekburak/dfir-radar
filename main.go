@@ -15,7 +15,7 @@ import (
 
 var (
 	getKeywordsInstruction    = "I will give you an articles about DFIR in various categories Please extract maximum three keywords from the articles to create insights. Use the following format: Keywords: keyword1, keyword2, keyword3. Use only lowercase letters \n"
-	createCategoryInstruction = "Please create categories using these keywords below. Use the following format 'Category Name}:{Keyword1, Keyword2}' Keywords:\n"
+	createCategoryInstruction = "Please create 4 categories using the keywords below. Decide category names yourself. Please create maximum 4 (four) categories.\n"
 	newsDir                   = "news"
 	textList                  []string
 )
@@ -133,7 +133,6 @@ func analyze(f *os.File) error {
 		return err
 	}
 
-	fmt.Println("askchatgpt param:", []string{createCategoryInstruction + strings.Join(keywordList, "\n")})
 	categories, err := askChatGPT([]string{createCategoryInstruction + strings.Join(keywordList, "\n")})
 	if err != nil {
 		log.Printf("Failed to ask chat gpt categories error: %v", err)
