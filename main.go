@@ -7,22 +7,50 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"time"
 
 	"github.com/rakyll/openai-go"
 	"github.com/rakyll/openai-go/completion"
 )
 
 var (
-	promptPrefix = "I will give you an articles about DFIR in various categories Please extract maximum three keywords from the articles to create insights. Use the following format: Keywords: keyword1, keyword2, keyword3. Use only lowercase letters \n"
-	newsDir      = "news"
-	textList     []string
+	getKeywordsInstruction    = "I will give you an articles about DFIR in various categories Please extract maximum three keywords from the articles to create insights. Use the following format: Keywords: keyword1, keyword2, keyword3. Use only lowercase letters \n"
+	createCategoryInstruction = "Please create categories using these keywords below. Use the following format 'Category Name}:{Keyword1, Keyword2}' Keywords:\n"
+	newsDir                   = "news"
+	textList                  []string
 )
 
 func main() {
+
+	texts, err := readFiles(newsDir)
+	if err != nil {
+		log.Printf("Failed to read files from directory '%s' error: %v", newsDir, err)
+		return
+	}
+
+	keywords, err := keywords(texts)
+	if err != nil {
+		log.Printf("Failed to get keywords from chatGPT error: %v", err)
+		return
+	}
+
+	keywordFile, err := saveKeywords(keywords)
+	if err != nil {
+		log.Printf("Failed to save keywords error: %v", err)
+		return
+	}
+
+	if err = analyze(keywordFile); err != nil {
+		log.Printf("Failed to analyze keywords error: %v", err)
+		return
+	}
+}
+
+func readFiles(dir string) ([]string, error) {
 	newsFiles, err := os.ReadDir(newsDir)
 	if err != nil {
 		log.Printf("Failed to read news directory '%s' error: %v", newsDir, err)
-		os.Exit(1)
+		return nil, err
 	}
 	for _, file := range newsFiles {
 		if !file.IsDir() && file.Type().IsRegular() {
@@ -36,35 +64,48 @@ func main() {
 		}
 	}
 
-	extractKeywords(textList)
+	return textList, nil
 }
 
-func extractKeywords(texts []string) {
-	ctx := context.Background()
-	s := openai.NewSession(os.Getenv("OPENAI_API_KEY"))
-	client := completion.NewClient(s, "text-davinci-003")
+func keywords(texts []string) ([]string, error) {
+
 	var keywordList []string
 	for _, text := range texts {
-		resp, err := client.Create(ctx, &completion.CreateParameters{
-			N:         1,
-			MaxTokens: 200,
-			Prompt:    []string{promptPrefix + text}})
+		answers, err := askChatGPT([]string{getKeywordsInstruction + text})
 		if err != nil {
-			log.Fatalf("Failed to create completion error: %v", err)
+			log.Printf("Failed to ask chat gpt error: %v", err)
+			return nil, err
 		}
 
-		for _, choice := range resp.Choices {
-			keywordList = append(keywordList, choice.Text)
+		for _, answer := range answers {
+			keywordList = append(keywordList, answer.Text)
 		}
 	}
 
-	saveKeywords(keywordList)
+	return keywordList, nil
 }
 
-func saveKeywords(keywords []string) {
-	f, err := os.Create("keywords.txt")
+func askChatGPT(prompt []string) ([]*completion.Choice, error) {
+	client := completion.NewClient(openai.NewSession(os.Getenv("OPENAI_API_KEY")), "text-davinci-003")
+	resp, err := client.Create(context.Background(), &completion.CreateParameters{
+		N:         1,
+		MaxTokens: 200,
+		Prompt:    prompt})
 	if err != nil {
-		log.Fatalf("Failed to create keywords file error: %v", err)
+		log.Printf("Failed to create openai completion error: %v", err)
+		return nil, err
+	}
+
+	return resp.Choices, nil
+}
+
+func saveKeywords(keywords []string) (*os.File, error) {
+	timestamp := time.Now().Format("20060102150405")
+
+	f, err := os.Create(fmt.Sprintf("keywords-%s.txt", timestamp))
+	if err != nil {
+		log.Printf("Failed to create keywords file error: %v", err)
+		return nil, err
 	}
 	defer f.Close()
 
@@ -77,19 +118,39 @@ func saveKeywords(keywords []string) {
 
 	// Write filtered array to file
 	data := []byte(strings.Join(filteredKeywords, "\n"))
-	err = os.WriteFile(f.Name(), data, 0644)
-	if err != nil {
+	if err = os.WriteFile(f.Name(), data, 0644); err != nil {
 		log.Printf("Failed to write keywords to file error: %v", err)
-		return
+		return nil, err
 	}
 
-	readKeywordsFile(f)
+	return f, nil
 }
 
-func readKeywordsFile(f *os.File) {
+func analyze(f *os.File) error {
+	keywordList, err := readKeywordsFile(f)
+	if err != nil {
+		log.Printf("Failed to read keywords file error: %v", err)
+		return err
+	}
+
+	fmt.Println("askchatgpt param:", []string{createCategoryInstruction + strings.Join(keywordList, "\n")})
+	categories, err := askChatGPT([]string{createCategoryInstruction + strings.Join(keywordList, "\n")})
+	if err != nil {
+		log.Printf("Failed to ask chat gpt categories error: %v", err)
+		return err
+	}
+
+	for i, category := range categories {
+		fmt.Printf("category %d: %s\n", i, category.Text)
+	}
+	return nil
+}
+
+func readKeywordsFile(f *os.File) ([]string, error) {
 	textData, err := os.ReadFile(f.Name())
 	if err != nil {
 		log.Printf("Failed to read keywords file error: %v", err)
+		return nil, err
 	}
 
 	// Remove empty lines and "Keywords:" prefix
@@ -102,5 +163,5 @@ func readKeywordsFile(f *os.File) {
 		}
 	}
 
-	fmt.Println(filteredLines)
+	return filteredLines, nil
 }
