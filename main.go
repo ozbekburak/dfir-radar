@@ -21,7 +21,6 @@ var (
 )
 
 func main() {
-
 	texts, err := readFiles(newsDir)
 	if err != nil {
 		log.Printf("Failed to read files from directory '%s' error: %v", newsDir, err)
@@ -40,7 +39,7 @@ func main() {
 		return
 	}
 
-	if err = analyze(keywordFile); err != nil {
+	if err = analyzeCategories(keywordFile); err != nil {
 		log.Printf("Failed to analyze keywords error: %v", err)
 		return
 	}
@@ -126,7 +125,7 @@ func saveKeywords(keywords []string) (*os.File, error) {
 	return f, nil
 }
 
-func analyze(f *os.File) error {
+func analyzeCategories(f *os.File) error {
 	keywordList, err := readKeywordsFile(f)
 	if err != nil {
 		log.Printf("Failed to read keywords file error: %v", err)
