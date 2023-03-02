@@ -18,7 +18,7 @@ data = rows[1:]
 
 # Create a quadrant chart
 fig, ax = plt.subplots(figsize=(16, 16))
-ax.set_title("Binalyze RADAR: Automated DFIR Report")
+ax.set_title("Forensics RADAR: Automated DFIR Report")
 
 # Draw the quadrants
 for i in range(4):

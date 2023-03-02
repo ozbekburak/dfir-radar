@@ -1,4 +1,4 @@
-# Binalyze RADAR: Automated DFIR Reporting Tool for Real-time Insight into the Industry
+# Forensics RADAR: Automated DFIR Reporting Tool for Real-time Insight into the Industry
 
 ## Introduction
 
