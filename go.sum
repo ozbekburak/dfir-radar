@@ -1,2 +1,2 @@
-github.com/rakyll/openai-go v0.0.0-20230227181758-1df94a18077d h1:0nomSA6P5o0a9ekdkrIYiSvvG9uZ9NtD2n+uPPikHBE=
-github.com/rakyll/openai-go v0.0.0-20230227181758-1df94a18077d/go.mod h1:hQpeaAVYbRXtWjFUew82LmbEIASmjihU3aI5NfJdqxA=
+github.com/rakyll/openai-go v0.0.0-20230301221448-e88414a21100 h1:GGTAcdjS+MEeRJ9+YO7ekQYp4ko84KwhNTrjfM5GpEk=
+github.com/rakyll/openai-go v0.0.0-20230301221448-e88414a21100/go.mod h1:hQpeaAVYbRXtWjFUew82LmbEIASmjihU3aI5NfJdqxA=
