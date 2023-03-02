@@ -11,6 +11,10 @@ The field of Digital Forensics and Incident Response (DFIR) is rapidly evolving,
 
 Our objective is to create an automated tool that collects data from various sources, extracts relevant keywords, categorizes them, and generates quadrant-style reports. The tool aims to help DFIR professionals stay up-to-date with the latest trends, news, and developments in the industry. With our tool, users will be able to quickly identify the emerging trends, predict future developments, and make informed decisions based on real-time data.
 
+### System Design
+
+![report](https://github.com/ozbekburak/dfir-radar/blob/main/img/systemdesign.png?raw=true)
+
 ## Methodology
 
 Our tool is built using **Go** programming language and **ChatGPT** to extract keywords from different sources such as twitter, newsletters, articles, papers, etc. These keywords are then categorized based on their relevance to the DFIR domain. The categories are then used to generate quadrant-style reports, which provide real-time insights into the industry. The reports are generated using **Python** and its libraries, including matplot, and are saved as CSV files.
