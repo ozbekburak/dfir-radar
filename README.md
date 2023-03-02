@@ -27,7 +27,7 @@ The generated CSV file can be found in the reports directory along with a sample
 ```python
 cd quadrant
 python3 --csv report.csv 
-````
+```
 
 ## Benefits
 
@@ -44,3 +44,7 @@ Our tool offers several benefits to DFIR professionals, including:
 ## Conclusion
 
 Our automated DFIR reporting tool offers a new and innovative way for DFIR professionals to stay up-to-date with the latest industry trends and developments. By leveraging AI and real-time data, our tool provides users with the insights they need to make informed decisions and stay ahead of the curve. We believe our tool will become an essential part of any DFIR professional's toolkit and look forward to bringing it to the market.
+
+# NOTE
+
+Our application currently works with ready-to-use .txt files, and it does not gather data directly from online sources at this time. Users will need to provide the necessary .txt files to the program for analysis. We are continually updating and improving our tool and may add online data gathering capabilities in the future.
