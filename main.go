@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"encoding/csv"
 	"fmt"
 	"log"
@@ -10,9 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakyll/openai-go"
-	"github.com/rakyll/openai-go/chat"
-	"github.com/rakyll/openai-go/completion"
+	"github.com/ozbekburak/dfir-hunter/chatgpt"
 )
 
 var (
@@ -163,7 +160,7 @@ func readFiles(dir string) ([]string, error) {
 func keywords(texts []string) ([]string, error) {
 	var keywordList []string
 	for _, text := range texts {
-		answers, err := askChatGPT(getKeywordsInstruction + text)
+		answers, err := chatgpt.AskChatGPT(getKeywordsInstruction + text)
 		if err != nil {
 			log.Printf("Failed to ask chat gpt error: %v", err)
 			return nil, err
@@ -173,57 +170,6 @@ func keywords(texts []string) ([]string, error) {
 	}
 
 	return keywordList, nil
-}
-
-func askChatGPT(prompt string) ([]string, error) {
-	client := chat.NewClient(openai.NewSession(os.Getenv("OPENAI_API_KEY")), "gpt-3.5-turbo")
-	resp, err := client.CreateCompletion(context.Background(), &chat.CreateCompletionParams{
-		Messages: []*chat.Message{
-			{
-				Role:    "user",
-				Content: prompt},
-		},
-	})
-	if err != nil {
-		log.Printf("Failed to create openai gpt-3.5-turbo completion error: %v", err)
-		// If we exceeded the limit, try to ask davinci model
-		if strings.Contains(err.Error(), "status_code=429") {
-			log.Println("Exceeded the limit, trying to ask davinci model...")
-			answers, err := askDavinci([]string{prompt})
-			if err != nil {
-				log.Printf("Failed to ask chat gpt with model davinci-text-003 error: %v", err)
-				return nil, err
-			}
-			var keywordList []string
-			for _, answer := range answers {
-				keywordList = append(keywordList, answer.Text)
-			}
-
-			return keywordList, nil
-		}
-		return nil, err
-	}
-
-	var contents []string
-	for _, choice := range resp.Choices {
-		contents = append(contents, choice.Message.Content)
-	}
-
-	return contents, nil
-}
-
-func askDavinci(prompt []string) ([]*completion.Choice, error) {
-	client := completion.NewClient(openai.NewSession(os.Getenv("OPENAI_API_KEY")), "text-davinci-003")
-	resp, err := client.Create(context.Background(), &completion.CreateParams{
-		N:         1,
-		MaxTokens: 200,
-		Prompt:    prompt})
-	if err != nil {
-		log.Printf("Failed to create openai completion error with model of davinci-text-003: %v", err)
-		return nil, err
-	}
-
-	return resp.Choices, nil
 }
 
 func saveKeywords(keywords []string) (*os.File, error) {
@@ -260,18 +206,13 @@ func analyzeCategories(f *os.File) (string, error) {
 		return "", err
 	}
 
-	categories, err := askChatGPT(createCategoryInstruction + strings.Join(keywordList, "\n"))
+	categories, err := chatgpt.AskChatGPT(createCategoryInstruction + strings.Join(keywordList, "\n"))
 	if err != nil {
 		log.Printf("Failed to ask chat gpt categories error: %v", err)
 		return "", err
 	}
 
-	var category string
-	for _, category = range categories {
-		log.Println(category)
-	}
-
-	return category, nil
+	return categories[0], nil
 }
 
 func readKeywordsFile(f *os.File) ([]string, error) {
