@@ -12,6 +12,10 @@ Our objective is to create an automated tool that collects data from various sou
 
 Our tool is built using **Go** programming language and **ChatGPT** to extract keywords from different sources such as twitter, newsletters, articles, papers, etc. These keywords are then categorized based on their relevance to the DFIR domain. The categories are then used to generate quadrant-style reports, which provide real-time insights into the industry. The reports are generated using **Python** and its libraries, including matplot, and are saved as CSV files.
 
+### NOTE
+
+Our application currently works with ready-to-use .txt files, and it does not gather data directly from online sources at this time. Users will need to provide the necessary .txt files to the program for analysis. We are continually updating and improving our tool and may add online data gathering capabilities in the **near** future.
+
 
 ## Usage
 
@@ -56,6 +60,3 @@ Our automated DFIR reporting tool offers a new and innovative way for DFIR profe
 
 In the future, we aim to create Gartner-like charts to enhance the reporting capabilities of our tool further. These charts will provide even more detailed insights into the DFIR industry by allowing users to compare and contrast different technologies, products, and services.
 
-# NOTE
-
-Our application currently works with ready-to-use .txt files, and it does not gather data directly from online sources at this time. Users will need to provide the necessary .txt files to the program for analysis. We are continually updating and improving our tool and may add online data gathering capabilities in the **near** future.
