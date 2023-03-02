@@ -18,6 +18,7 @@ Our tool is built using **Go** programming language and **ChatGPT** to extract k
 To use the program, the user needs to set the OPENAI_API_KEY environment variable to their API key for OpenAI. After that, they can generate the CSV file by running the following command in the terminal:
 
 ```go
+export OPENAI_API_KEY={your_api_key}
 go run main.go
 ```
 
@@ -26,8 +27,14 @@ The generated CSV file can be found in the reports directory along with a sample
 
 ```python
 cd quadrant
-python3 --csv report.csv 
+python3 main.py --csv ../reports/report.csv 
 ```
+
+## Screenshots
+
+![execute](https://github.com/ozbekburak/dfir-radar/blob/main/img/run.png?raw=true)
+![report](https://github.com/ozbekburak/dfir-radar/blob/main/img/report.png?raw=true)
+
 
 ## Benefits
 
@@ -45,6 +52,10 @@ Our tool offers several benefits to DFIR professionals, including:
 
 Our automated DFIR reporting tool offers a new and innovative way for DFIR professionals to stay up-to-date with the latest industry trends and developments. By leveraging AI and real-time data, our tool provides users with the insights they need to make informed decisions and stay ahead of the curve. We believe our tool will become an essential part of any DFIR professional's toolkit and look forward to bringing it to the market.
 
+## Future Work
+
+In the future, we aim to create Gartner-like charts to enhance the reporting capabilities of our tool further. These charts will provide even more detailed insights into the DFIR industry by allowing users to compare and contrast different technologies, products, and services.
+
 # NOTE
 
-Our application currently works with ready-to-use .txt files, and it does not gather data directly from online sources at this time. Users will need to provide the necessary .txt files to the program for analysis. We are continually updating and improving our tool and may add online data gathering capabilities in the future.
+Our application currently works with ready-to-use .txt files, and it does not gather data directly from online sources at this time. Users will need to provide the necessary .txt files to the program for analysis. We are continually updating and improving our tool and may add online data gathering capabilities in the **near** future.
