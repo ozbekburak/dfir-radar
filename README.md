@@ -1,5 +1,8 @@
 # Forensics RADAR: Automated DFIR Reporting Tool for Real-time Insight into the Industry
 
+> **Listening to our customers by analyzing what the world is saying.**
+
+
 ## Introduction
 
 The field of Digital Forensics and Incident Response (DFIR) is rapidly evolving, and keeping up with the latest developments is essential for staying ahead of the curve. Traditional methods of information gathering, such as reading articles, newsletters, and customer feedback, can be time-consuming and unreliable. This is where our automated DFIR reporting tool comes in. Our tool uses Artificial Intelligence (AI) to extract keywords from multiple sources and generate quadrant-style reports that provide real-time insight into the industry.
