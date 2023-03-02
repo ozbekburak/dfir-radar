@@ -89,6 +89,7 @@ func extractCategories(text string) map[string][]string {
 
 	return categories
 }
+
 func saveToCSV(catKeywordPair map[string][]string) (*os.File, *csv.Writer, error) {
 	timestamp := time.Now().Format("20060102150405")
 
@@ -137,6 +138,7 @@ func saveToCSV(catKeywordPair map[string][]string) (*os.File, *csv.Writer, error
 
 	return csvFile, csvWriter, nil
 }
+
 func readFiles(dir string) ([]string, error) {
 	newsFiles, err := os.ReadDir(newsDir)
 	if err != nil {
