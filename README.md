@@ -30,7 +30,7 @@ cd quadrant
 python3 main.py --csv ../reports/report.csv 
 ```
 
-## Screenshots
+## Screenshot
 
 ![execute](https://github.com/ozbekburak/dfir-radar/blob/main/img/run.png?raw=true)
 ![report](https://github.com/ozbekburak/dfir-radar/blob/main/img/report.png?raw=true)
