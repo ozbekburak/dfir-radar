@@ -13,7 +13,7 @@ Our objective is to create an automated tool that collects data from various sou
 
 ### System Design
 
-![report](https://github.com/ozbekburak/dfir-radar/blob/main/img/systemdesign.png?raw=true)
+![system](https://github.com/ozbekburak/dfir-radar/blob/main/img/system.png?raw=true)
 
 ## Methodology
 
