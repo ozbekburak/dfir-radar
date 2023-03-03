@@ -26,11 +26,13 @@ Our application currently works with ready-to-use .txt files, and it does not ga
 
 ## Usage
 
-To use the program, the user needs to set the OPENAI_API_KEY environment variable to their API key for OpenAI. After that, they can generate the CSV file by running the following command in the terminal:
+User needs to set the [OPENAI API KEY](https://platform.openai.com/account/api-keys) environment variable. After that, they can generate the CSV file by running the following command in the terminal:
 
 ```go
 export OPENAI_API_KEY={your_api_key}
-go run main.go
+git clone github.com/ozbekburak/dfir-radar
+cd dfir-radar
+go run .
 ```
 
 The generated CSV file can be found in the reports directory along with a sample CSV file for reference. To generate a quadrant-style report, the user can run the following command in the terminal:
